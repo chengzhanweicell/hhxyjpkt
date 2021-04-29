@@ -32,6 +32,12 @@
       </span>
     </div>
     <router-view></router-view>
+    <div class="footer">
+      <img src="../public/img/foot1.jpg" alt="">
+      <h3>欢迎来到黄淮学院精品课程</h3>
+      <img src="../public/img/foot.jpg" alt="">
+
+    </div>
   </div>
 
 </template>
@@ -78,7 +84,7 @@ export default {
 
 .app {
   width: 80%;
-  margin: 0.5rem auto;
+  margin: 0.5rem auto 0;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -123,6 +129,18 @@ export default {
         text-decoration: none;
         font-weight: bolder;
       }
+    }
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    
+    img {
+      width: 20%;
+      height: 100%;
     }
   }
 }

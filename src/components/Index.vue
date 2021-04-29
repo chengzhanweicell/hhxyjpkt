@@ -30,7 +30,8 @@
         <p>相比于传统的工业设备，工业机器人有众多的优势，比如机器人具有易用性、智能化水平高、生产效率及安全性高、易于管理且经济效益显著等特点，使得它们可以在高危环境下进行作业。</p>
       </div>
       <div class="right">
-        <div class="images" v-viewer="{movable: false}">
+        <div class="images"  v-viewer="{movable: false}">
+          <img src="../../public/img/logo.png" alt="">
           <img src="../../public/img/sy1.jpg" alt="">
         </div>
         <button type="button" @click="show" style="visibility:hidden"></button>
@@ -88,13 +89,14 @@ hr {
 .introduce {
   display: flex;
   .left {
-    width: 75%;
+    width: 65%;
     margin-right: 2.5%;
   }
   .right {
-    width: 20%;
+    width: 30%;
     img {
       width: 100%;
+      
     }
   }
 }

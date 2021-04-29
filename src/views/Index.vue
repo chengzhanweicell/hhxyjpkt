@@ -1,7 +1,21 @@
 <template>
   <div>
     <div class="app">
-      <img src="../../public/img/sy1.jpg" alt="">
+      <!-- <img src="../../public/img/sy1.jpg" alt=""> -->
+      <el-carousel :interval="4000" type="card" height="200px">
+        <el-carousel-item >
+          <img src="../../public/img/logo.png" alt="">
+        </el-carousel-item>
+        <el-carousel-item >
+          <img src="../../public/img/xyfg01.jpg" alt="">
+        </el-carousel-item>
+        <el-carousel-item >
+          <img src="../../public/img/xyfg02.jpg" alt="">
+        </el-carousel-item>
+        <el-carousel-item >
+          <img src="../../public/img/xyfg03.jpg" alt="">
+        </el-carousel-item>
+      </el-carousel>
       <router-view class="content"></router-view>
     </div>
   </div>
@@ -10,6 +24,10 @@
 <script>
 export default {
   name: "Index",
+  data() {
+    return {
+    };
+  },
 };
 </script>
  <script>
@@ -53,12 +71,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  img {
-    height: 3rem;
-    width:90%;
-    margin: 0.28rem 0 0.28rem;
+
+  .el-carousel--card {
+    width: 90%;
+    margin: 0.28rem;
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
-  .content{
+ 
+
+  .content {
     width: 90%;
   }
 }

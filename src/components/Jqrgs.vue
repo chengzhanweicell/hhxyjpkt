@@ -2,9 +2,15 @@
   <div>
     <div class="title">机器人观赏</div>
     <div class="images" v-viewer="{movable: false}">
-      <img src="../../public/img/cgzs01.jpg">
-      <img src="../../public/img/cgzs02.jpg">
-      <img src="../../public/img/cgzs03.jpg">
+      <div class="img">
+        <img src="../../public/img/cgzs01.jpg">
+      </div>
+      <div class="img">
+        <img src="../../public/img/cgzs02.jpg">
+      </div>
+      <div class="img">
+        <img src="../../public/img/cgzs03.jpg">
+      </div>
     </div>
     <button type="button" @click="show" style="visibility:hidden"></button>
 
@@ -21,11 +27,16 @@ export default {
   },
 };
 </script>
-<style lang="less">
+<style scoped lang="less">
 .title {
   font-size: 0.2rem;
 }
-img {
-  padding: 0.1rem;
+.images {
+  div{
+    display: flex;
+    justify-content: center;
+    margin: 20px ;
+  }
+ 
 }
 </style>
